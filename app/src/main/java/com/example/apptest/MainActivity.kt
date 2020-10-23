@@ -1,4 +1,4 @@
-package com.example.apptestgit
+package com.example.apptest
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,11 +29,9 @@ class MainActivity : AppCompatActivity() {
             R.id.btn7 -> cellID = 7
             R.id.btn8 -> cellID = 8
             R.id.btn9 -> cellID = 9
-
         }
         playGame(cellID, btnSelect)
     }
-
     //arrays to save each player's moves
     var player1 = ArrayList<Int>()
     var player2 = ArrayList<Int>()
